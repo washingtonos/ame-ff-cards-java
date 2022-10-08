@@ -31,14 +31,7 @@ public class CardController {
   @GetMapping("{id}")
   public Card findCardById(@PathVariable("id") int id){
     LOG.info("Buscando card com id {}", id);
-
-    var card = cardService.findById(id);
-
-    if(card.isPresent()){
-      return card.get();
-    }
-
-    throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Card not found");
+    return cardService.findById(id);
   }
 
   @PostMapping

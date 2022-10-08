@@ -18,6 +18,8 @@ public class CardRequest {
 
   private int skill;
 
+  private int originId;
+
   public String getName() {
     return name;
   }
@@ -82,6 +84,14 @@ public class CardRequest {
     this.skill = skill;
   }
 
+  public int getOriginId() {
+    return originId;
+  }
+
+  public void setOriginId(int originId) {
+    this.originId = originId;
+  }
+
   @Override
   public String toString() {
     return "CardRequest{" +
@@ -93,6 +103,7 @@ public class CardRequest {
         ", gear=" + gear +
         ", intellect=" + intellect +
         ", skill=" + skill +
+        ", originId=" + originId +
         '}';
   }
 }
