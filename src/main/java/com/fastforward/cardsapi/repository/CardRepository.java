@@ -1,13 +1,10 @@
 package com.fastforward.cardsapi.repository;
 
 import com.fastforward.cardsapi.model.Card;
-import java.util.Optional;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CardRepository {
+public interface CardRepository extends JpaRepository<Card, Long> {
 
-  Optional<Card> findByID(int id);
-
-  Card save(Card card);
 }

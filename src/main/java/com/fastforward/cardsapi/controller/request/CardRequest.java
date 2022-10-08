@@ -18,7 +18,7 @@ public class CardRequest {
 
   private int skill;
 
-  private int originId;
+  private long originId;
 
   public String getName() {
     return name;
@@ -84,11 +84,11 @@ public class CardRequest {
     this.skill = skill;
   }
 
-  public int getOriginId() {
+  public long getOriginId() {
     return originId;
   }
 
-  public void setOriginId(int originId) {
+  public void setOriginId(long originId) {
     this.originId = originId;
   }
 

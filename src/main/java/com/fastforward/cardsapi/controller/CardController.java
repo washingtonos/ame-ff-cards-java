@@ -29,7 +29,7 @@ public class CardController {
   }
 
   @GetMapping("{id}")
-  public Card findCardById(@PathVariable("id") int id){
+  public Card findCardById(@PathVariable("id") long id){
     LOG.info("Buscando card com id {}", id);
     return cardService.findById(id);
   }

@@ -23,7 +23,7 @@ public class CardOriginController {
   private CardOriginService cardOriginService;
 
   @GetMapping("{id}")
-  public CardOrigin findCardOriginById(@PathVariable("id") int id){
+  public CardOrigin findCardOriginById(@PathVariable("id") long id){
     LOG.info("Buscando card origin com id [{}]", id);
     return cardOriginService.findById(id);
   }
